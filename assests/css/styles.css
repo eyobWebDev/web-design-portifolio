@@ -153,3 +153,15 @@ body {
 .footer .footer-description {
     margin-bottom: 20px;
 }
+
+@media (max-width: 560px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .left-side {
+    position: relative;
+  }
+  .right-side {
+    width: 100%;
+  }
+}

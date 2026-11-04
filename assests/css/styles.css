@@ -72,8 +72,23 @@ body {
     background-color: rgb(255 255 255 / 0.9);
 }
 
-.left-side .links .page-links a:hover, a:visited {
+.left-side .links .page-links a:hover {
     color: rgb(255 255 255 / 1);
+}
+
+body:has(#about:target) .left-side .links .page-links .hor-link a[href="#about"],
+body:has(#project:target) .left-side .links .page-links .hor-link  a[href="#project"],
+body:has(#tech-stack:target) .left-side .links .page-links .hor-link  a[href="#tech-stack"],
+body:has(#contact:target) .left-side .links .page-links .hor-link a[href="#contact"] {
+    color: rgb(255 255 255 / 1);
+}
+
+body:has(#about:target) .left-side .links .page-links .hor-link a[href="#about"] .hr,
+body:has(#project:target) .left-side .links .page-links .hor-link  a[href="#project"] .hr,
+body:has(#tech-stack:target) .left-side .links .page-links .hor-link  a[href="#tech-stack"] .hr,
+body:has(#contact:target) .left-side .links .page-links .hor-link a[href="#contact"] .hr {
+    width: 6rem;
+    background-color: rgb(255 255 255 / 0.9);
 }
 
 .portifolio-image-wrapper {

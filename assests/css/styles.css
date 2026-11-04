@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(45deg, #031732, #033141);
+    color: rgb(255 255 255 / 0.85);
+    font-family: InterVariable, Inter, sans-serif
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.header {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    left: 0;
+}
+
+.left-side .links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.left-side .links .page-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side .links .page-links a {
+    text-decoration: none;
+    color: rgb(255 255 255 / 0.6);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: .6rem;
+    transition: all .25s ease-in;
+    letter-spacing: 1.2px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: 12rem;
+    padding: .5rem 0rem;
+}
+
+.left-side .links .page-links .hor-link .hr {
+    width: 3rem;
+    height: 1.5px;
+    padding: 0;
+    background-color: rgb(255 255 255 / 0.6);
+    transition: all .2s ease-in;
+}
+
+.left-side .links .page-links a:hover {
+    cursor: pointer;
+}
+
+.left-side .links .page-links .hor-link a:hover .hr {
+    width: 6rem;
+    background-color: rgb(255 255 255 / 0.9);
+}
+
+.left-side .links .page-links a:hover, a:visited {
+    color: rgb(255 255 255 / 1);
+}
+
+.portifolio-image-wrapper {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 100%;
+    overflow: hidden;
+    align-self: flex-start;
+}
+.portifolio-image-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.title p, h2 {
+    color: rgb(255 255 255 / 0.6);
+    font-weight: lighter;
+}
+
+.title h2 {
+    margin-top: -.6rem;
+    font-size: 1.2rem;
+    color: rgb(255 255 255 / 0.8);
+}
+
+.title p {
+    font-size: .8rem;
+    margin-top: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #899eae;
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.social-links svg {
+  width: 21px;
+  height: 21px;
+}
+
+.social-links a:hover {
+  color: #35b77d;
+  transform: translateY(-3px);
+}
+
+.right-side {
+    color: rgb(255 255 255 / 0.6);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.about-me p {
+    white-space: pre-wrap;
+    line-height: 1.3rem;
+    font-size: .9rem;
+}
+
+.footer {
+    font-size: .75rem;
+    padding-bottom: 30px;
+    line-height: 1rem;
+}
+.footer .footer-description {
+    margin-bottom: 20px;
+}

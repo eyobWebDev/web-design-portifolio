@@ -1,0 +1,125 @@
+.teckstack {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 40px 0 60px;
+  color: #bdc7d3;
+}
+
+.teckstack-title {
+  font-size: 28px;
+  font-weight: 750;
+  margin: 0 0 52px;
+  color: #b9c5d2;
+  letter-spacing: -0.8px;
+}
+
+.teckstack-group {
+  margin-bottom: 64px;
+}
+
+.teckstack-group h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 15px 9px;
+  color: #c2ccd7;
+}
+
+.teckstack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 54px;
+  row-gap: 29px;
+  padding: 0 0 0 24px;
+}
+
+.teckstack-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 50px;
+  padding: 10px 17px;
+  border-radius: 4px;
+  background: #1d2b3b;
+  color: #c5cbd4;
+  font-size: 1rem;
+  font-weight: 450;
+  transition: all 0.2s ease, transform 0.2s ease;
+}
+
+.teckstack-card:hover {
+  background: #26394d;
+  transform: translateY(-2px);
+}
+
+.teckstack-card .icon {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.teckstack .blue { color: #3288ff; }
+.teckstack .purple { color: #a344ed; }
+.teckstack .orange { color: #ff780c; }
+.teckstack .green { color: #10b957; }
+.teckstack .muted { color: #697788; }
+.teckstack .python { color: #3478a8; }
+.teckstack .django {
+  color: #e5f4ee;
+  background: #0b3029;
+  padding: 2px 4px;
+}
+
+/* Tablet */
+@media (max-width: 760px) {
+  .teckstack {
+    padding: 35px 20px;
+  }
+
+  .teckstack-grid {
+    column-gap: 20px;
+    padding-left: 12px;
+  }
+
+  .teckstack-card {
+    font-size: 18px;
+    gap: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  .teckstack-title {
+    font-size: 25px;
+    margin-bottom: 36px;
+  }
+
+  .teckstack-group {
+    margin-bottom: 45px;
+  }
+
+  .teckstack-group h3 {
+    font-size: 21px;
+    margin-left: 0;
+  }
+
+  .teckstack-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    padding: 0;
+  }
+
+  .teckstack-card {
+    min-height: 48px;
+    padding: 9px 11px;
+    font-size: 16px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .teckstack-grid {
+    grid-template-columns: 1fr;
+  }
+}
